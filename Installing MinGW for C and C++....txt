@@ -1,0 +1,29 @@
+Installing MinGW for C and C++...
+Downloading mingw.exe...
+Running mingw.exe...
+Start-Process : This command cannot be run due to the error: This version of %1 is not compatible with the
+version of Windows you're running. Check your computer's system information and then contact the software
+publisher.
+At C:\Users\manav\OneDrive\VM\install-languages.ps1:13 char:5
++     Start-Process -FilePath $output -Wait -NoNewWindow
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [Start-Process], InvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperationException,Microsoft.PowerShell.Commands.StartProcessCommand
+
+C:\\MinGW\\bin is already in the system PATH.
+Verifying installation...
+gcc : The term 'gcc' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At C:\Users\manav\OneDrive\VM\install-languages.ps1:36 char:1
++ gcc --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (gcc:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+g++ : The term 'g++' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At C:\Users\manav\OneDrive\VM\install-languages.ps1:37 char:1
++ g++ --version
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (g++:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
